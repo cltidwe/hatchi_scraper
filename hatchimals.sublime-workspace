@@ -1,0 +1,350 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hatchimal",
+				"hatchimals_list"
+			],
+			[
+				"walm",
+				"walmart_data"
+			],
+			[
+				"toyr",
+				"toysrus_data"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#!/usr/local/bin python\nfrom bs4 import BeautifulSoup\nimport requests\nimport csv \n\nurl = \"https://www.walmart.com/search/?query=hatchimals\"\nr = requests.get(url)\n\nsoup = BeautifulSoup(r.content)\n\ng_data = soup.find_all(\"div\", {\"class\": \"tile-content\"})\n\ndata = []\n\nfor item in g_data:\n\ttitle = item.contents[1].find_all(\"a\", {\"class\": \"js-product-title\"})[0].text\n\tprice = item.contents[3].find_all(\"span\", {\"class\": \"price\"})[0].text\n\tstock = item.contents[3].find_all(\"span\", {\"class\": \"price-auxblock\"})[0].text\n\tdata.append((title, price, stock))\n\nfrom datetime import datetime  \n\nwith open('hatchimals.csv', 'w') as csv_file:  \n\twriter = csv.writer(csv_file)\n\twriter.writerow([\"Title\", \"Price\", \"Stock\", \"Last updated\"])\n\t# The for loop\n\tfor title, price, stock in data:\n\t\twriter.writerow([title, price, stock, datetime.now()])\n\nurl = \"http://www.toysrus.com/product/index.jsp?productId=88534486&cp=2255956.3209580.99530216&parentPage=family\"\n\nr = requests.get(url)\n\nsoup = BeautifulSoup(r.content)\n\ntables = soup.find_all(\"div\", {\"id\": \"productPanel\"})\n\nfor item in tables:\n\ttitle = item.find_all(\"div\", {\"id\": \"lTitle\"})[0].h1.text\n\tprice = item.find_all(\"li\", {\"class\": \"retail\"})[0].text\n\tstock = item.find_all(\"div\", {\"id\": \"productOOS\"})[0].text\n\tdata.append((title, price, stock))\n\nfrom datetime import datetime  \n\nwith open('hatchimals.csv', 'w') as csv_file:  \n    writer = csv.writer(csv_file)\n    writer.writerow([\"Title\", \"Price\", \"Stock\", \"Last updated\"])\n    # The for loop\n    for title, price, stock in data:\n\t\twriter.writerow([title, price, stock, datetime.now()])\n\nurl = \"http://www.toysrus.com/product/index.jsp?productId=96165816&cp=2255956.3209580.99530216&parentPage=family\"\n\nr = requests.get(url)\n\nsoup = BeautifulSoup(r.content)\n\ntables = soup.find_all(\"div\", {\"id\": \"productPanel\"})\n\nfor item in tables:\n\ttitle = item.find_all(\"div\", {\"id\": \"lTitle\"})[0].h1.text\n\tprice = item.find_all(\"li\", {\"class\": \"retail\"})[0].text\n\tstock = item.find_all(\"div\", {\"id\": \"productOOS\"})[0].text\n\tdata.append((title, price, stock))\n\nfrom datetime import datetime  \n\nwith open('hatchimals.csv', 'w') as csv_file:  \n    writer = csv.writer(csv_file)\n    writer.writerow([\"Title\", \"Price\", \"Stock\", \"Last updated\"])\n    # The for loop\n    for title, price, stock in data:\n\t\twriter.writerow([title, price, stock, datetime.now()])\n\nurl = \"http://www.toysrus.com/product/index.jsp?productId=96165806&cp=2255956.3209580.99530216&parentPage=family\"\n\nr = requests.get(url)\n\nsoup = BeautifulSoup(r.content)\n\ntables = soup.find_all(\"div\", {\"id\": \"productPanel\"})\n\nfor item in tables:\n\ttitle = item.find_all(\"div\", {\"id\": \"lTitle\"})[0].h1.text\n\tprice = item.find_all(\"li\", {\"class\": \"retail\"})[0].text\n\tstock = item.find_all(\"div\", {\"id\": \"productOOS\"})[0].text\n\tdata.append((title, price, stock))\n\nfrom datetime import datetime  \n\nwith open('hatchimals.csv', 'w') as csv_file:  \n\twriter = csv.writer(csv_file)\n\twriter.writerow([\"Title\", \"Price\", \"Stock\", \"Last updated\"])\n\t# The for loop\n\tfor title, price, stock in data:\n\t\twriter.writerow([title, price, stock, datetime.now()])\n\nurl = \"http://www.toysrus.com/product/index.jsp?productId=105339906&cp=2255956.3209580.99530216&parentPage=family\"\n\nr = requests.get(url)\n\nsoup = BeautifulSoup(r.content)\n\ntables = soup.find_all(\"div\", {\"id\": \"productPanel\"})\n\nfor item in tables:\n\ttitle = item.find_all(\"div\", {\"id\": \"lTitle\"})[0].h1.text\n\tprice = item.find_all(\"li\", {\"class\": \"retail\"})[0].text\n\tstock = item.find_all(\"div\", {\"id\": \"productOOS\"})[0].text\n\tdata.append((title, price, stock))\n\nfrom datetime import datetime  \n\nwith open('hatchimals.csv', 'w') as csv_file:  \n\twriter = csv.writer(csv_file)\n\twriter.writerow([\"Title\", \"Price\", \"Stock\", \"Last updated\"])\n\t# The for loop\n\tfor title, price, stock in data:\n\t\twriter.writerow([title, price, stock, datetime.now()])\n\nurl = \"http://www.toysrus.com/product/index.jsp?productId=88534376&cp=2255956.3209580.99530216&parentPage=family\"\n\nr = requests.get(url)\n\nsoup = BeautifulSoup(r.content)\n\ntables = soup.find_all(\"div\", {\"id\": \"productPanel\"})\n\nfor item in tables:\n\ttitle = item.find_all(\"div\", {\"id\": \"lTitle\"})[0].h1.text\n\tprice = item.find_all(\"li\", {\"class\": \"retail\"})[0].text\n\tstock = item.find_all(\"div\", {\"id\": \"productOOS\"})[0].text\n\tdata.append((title, price, stock))\n\nfrom datetime import datetime  \n\nwith open('hatchimals.csv', 'w') as csv_file:  \n\twriter = csv.writer(csv_file)\n\twriter.writerow([\"Title\", \"Price\", \"Stock\", \"Last updated\"])\n\t# The for loop\n\tfor title, price, stock in data:\n\t\twriter.writerow([title, price, stock, datetime.now()])\n\t\t",
+			"file": "program.py",
+			"file_size": 4567,
+			"file_write_time": 131237367160000000,
+			"settings":
+			{
+				"buffer_size": 4570,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data.py",
+			"settings":
+			{
+				"buffer_size": 4543,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Christi/Desktop/myapp",
+		"/Users/Christi/Desktop/myapp/hatchimals scraper",
+		"/Users/Christi/Desktop/myapp/hatchimals scraper/loadpages"
+	],
+	"file_history":
+	[
+		"/Users/Christi/Desktop/myapp/program.py",
+		"/Users/Christi/Desktop/myapp/data.py",
+		"/Users/Christi/Desktop/myapp/print \"Hello World\"",
+		"/Users/Christi/Desktop/myapp/load.py",
+		"/Users/Christi/Desktop/myapp/loadtoysRus.py",
+		"/Users/Christi/Desktop/toyRus_gdata_variables_to_tbl.py",
+		"/Users/Christi/Desktop/myapp/hatchimals_data_allpages.py",
+		"/Users/Christi/Desktop/hatchimals.py",
+		"/Users/Christi/Desktop/myapp/get_hatchimal_data.txt",
+		"/Users/Christi/Desktop/scrape_with_bs4_Clean.py",
+		"/Users/Christi/Desktop/myapp/scraper_to_postgres.py",
+		"/Users/Christi/Desktop/myapp/scraper.py",
+		"/Users/Christi/Desktop/myapp/scraper_final.py",
+		"/Users/Christi/Desktop/myapp/h.py",
+		"/Users/Christi/Desktop/myapp/hatchimal_scraper_night.py",
+		"/Users/Christi/Desktop/myapp/import MySQLdb",
+		"/Users/Christi/Desktop/myapp/mysql_module_test.py",
+		"/Users/Christi/Desktop/myapp/mysqldb_module_test.py",
+		"/Users/Christi/Desktop/myapp/mysql_module_createtable_test.py",
+		"/Users/Christi/Desktop/scrape_definitions.py",
+		"/Users/Christi/Desktop/scrape_with_bs4.py",
+		"/Users/Christi/Documents/Trulynn/template.js",
+		"/Users/Christi/Documents/Trulynn/template.css",
+		"/Users/christi/Downloads/wp-seo-main.php",
+		"/Users/christi/Downloads/wp-seo.php",
+		"/Users/christi/Downloads/sitemap-builder.php",
+		"/Users/christi/Downloads/sitemap.php",
+		"/Users/christi/Downloads/sitemap-wpmu.php",
+		"/Users/christi/Downloads/pc-robotstxt.php",
+		"/Users/christi/Downloads/full-css-e4bbaf2842a3f1049cf730ddf37e61de.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/functions.php",
+		"/Users/christi/Documents/Trulynn/vantage-child/functions.php",
+		"/Users/Christi/Documents/Trulynn/functions.php",
+		"/Users/Christi/Documents/Trulynn/style.css",
+		"/Users/christi/Documents/Trulynn/Child Theme/vantage-child/style.css",
+		"/Users/christi/Documents/Trulynn/Child Theme/vantage-child/functions.php",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/footer.php",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/style.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/woocommerce 2.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/woocommerce-layout.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/product-attributes.php",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/woocommerce.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/footer 2.php",
+		"/Users/christi/index.json",
+		"/Users/Christi/Desktop/sample_app/Gemfile",
+		"/Users/Christi/Desktop/sample_app/config/initializers/asin.rb",
+		"/Users/Christi/Desktop/sample_app/asin/lib/asin/configuration.rb"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http://www.toysrus.com/product/index.jsp?productId=105339906&cp=2255956.3209580.99530216&parentPage=family",
+			"hatchimal",
+			"tru 5",
+			"data",
+			"g_data",
+			"open",
+			"robot"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "program.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4567
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 0,
+					"file": "program.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4070,
+								4070
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "data.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hatchimals.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

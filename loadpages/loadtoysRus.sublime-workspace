@@ -1,0 +1,234 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hatchimal",
+				"hatchimals_list"
+			],
+			[
+				"walm",
+				"walmart_data"
+			],
+			[
+				"toyr",
+				"toysrus_data"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Christi/Desktop/myapp/program.py",
+		"/Users/Christi/Desktop/myapp/data.py",
+		"/Users/Christi/Desktop/myapp/print \"Hello World\"",
+		"/Users/Christi/Desktop/myapp/load.py",
+		"/Users/Christi/Desktop/myapp/loadtoysRus.py",
+		"/Users/Christi/Desktop/toyRus_gdata_variables_to_tbl.py",
+		"/Users/Christi/Desktop/myapp/hatchimals_data_allpages.py",
+		"/Users/Christi/Desktop/hatchimals.py",
+		"/Users/Christi/Desktop/myapp/get_hatchimal_data.txt",
+		"/Users/Christi/Desktop/scrape_with_bs4_Clean.py",
+		"/Users/Christi/Desktop/myapp/scraper_to_postgres.py",
+		"/Users/Christi/Desktop/myapp/scraper.py",
+		"/Users/Christi/Desktop/myapp/scraper_final.py",
+		"/Users/Christi/Desktop/myapp/h.py",
+		"/Users/Christi/Desktop/myapp/hatchimal_scraper_night.py",
+		"/Users/Christi/Desktop/myapp/import MySQLdb",
+		"/Users/Christi/Desktop/myapp/mysql_module_test.py",
+		"/Users/Christi/Desktop/myapp/mysqldb_module_test.py",
+		"/Users/Christi/Desktop/myapp/mysql_module_createtable_test.py",
+		"/Users/Christi/Desktop/scrape_definitions.py",
+		"/Users/Christi/Desktop/scrape_with_bs4.py",
+		"/Users/Christi/Documents/Trulynn/template.js",
+		"/Users/Christi/Documents/Trulynn/template.css",
+		"/Users/christi/Downloads/wp-seo-main.php",
+		"/Users/christi/Downloads/wp-seo.php",
+		"/Users/christi/Downloads/sitemap-builder.php",
+		"/Users/christi/Downloads/sitemap.php",
+		"/Users/christi/Downloads/sitemap-wpmu.php",
+		"/Users/christi/Downloads/pc-robotstxt.php",
+		"/Users/christi/Downloads/full-css-e4bbaf2842a3f1049cf730ddf37e61de.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/functions.php",
+		"/Users/christi/Documents/Trulynn/vantage-child/functions.php",
+		"/Users/Christi/Documents/Trulynn/functions.php",
+		"/Users/Christi/Documents/Trulynn/style.css",
+		"/Users/christi/Documents/Trulynn/Child Theme/vantage-child/style.css",
+		"/Users/christi/Documents/Trulynn/Child Theme/vantage-child/functions.php",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/footer.php",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/style.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/woocommerce 2.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/woocommerce-layout.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/product-attributes.php",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/woocommerce.css",
+		"/private/var/folders/wb/kl2j7xpx3bgbvzldzt7klf8c0000gn/T/fz3temp-1/footer 2.php",
+		"/Users/christi/index.json",
+		"/Users/Christi/Desktop/sample_app/Gemfile",
+		"/Users/Christi/Desktop/sample_app/config/initializers/asin.rb",
+		"/Users/Christi/Desktop/sample_app/asin/lib/asin/configuration.rb"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http://www.toysrus.com/product/index.jsp?productId=105339906&cp=2255956.3209580.99530216&parentPage=family",
+			"hatchimal",
+			"tru 5",
+			"data",
+			"g_data",
+			"open",
+			"robot"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "loadtoysRus.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
